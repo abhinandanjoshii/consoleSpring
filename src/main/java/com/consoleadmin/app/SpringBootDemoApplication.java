@@ -14,9 +14,10 @@ public class SpringBootDemoApplication {
 		obj1.Code();
 		// 2 dif reference , same object reference it will go.
 		//bydefault singleton object, else we need to create
-		obj1.setAge(21);
-		System.out.println(obj1.getAge());
+//		obj1.setAge(21);
+//		System.out.println(obj1.getAge());
 		System.out.println(obj1.hashCode());
+		System.out.println(obj1.getAge());
 
 //		Alien obj2 = context.getBean(Alien.class);
 //		obj2.Code();

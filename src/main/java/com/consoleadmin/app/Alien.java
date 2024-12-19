@@ -6,6 +6,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class Alien {
 
+    //via constructer injection
+    public Alien(int age){
+        this.age = age;
+    }
+
     private int age;
     // auto wiring required for mapping object.
     @Autowired
@@ -14,11 +19,11 @@ public class Alien {
     public int getAge() {
         return age;
     }
-
-    //setter injection
-    public void setAge(int age) {
-        this.age = age;
-    }
+//
+//    //setter injection
+//    public void setAge(int age) {
+//        this.age = age;
+//    }
 
     public void Code(){
         laptop.compile();

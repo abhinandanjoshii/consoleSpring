@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Alien {
 
+    int age;
     // auto wiring required for mapping object.
     @Autowired
     Laptop laptop;
